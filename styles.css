@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*-navigation bar-*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    box-shadow: -1px 7px 5px -4px rgba(0,0,0,0.72);
+-webkit-box-shadow: -1px 7px 5px -4px rgba(0,0,0,0.72);
+-moz-box-shadow: -1px 7px 5px -4px rgba(0,0,0,0.72);
+}
+
+.logo img{
+    width: 120px;
+    margin-left: 40px;
+}
+
+.options{
+    margin: 20px;
+    width: 200px;
+    display:inline-flex;
+    justify-content: space-around; 
+    align-items: center;    
+}
+
+.options a{ 
+    padding: 10px;
+    color: aliceblue;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    transition: color 0.4s ease-in-out; /* Suaviza la transición */
+}
+
+.options a:hover {
+    color: rgb(187, 186, 186); /* Primer cambio a rojo */
+    transition: color 0.4s ease-in-out; /* Suave transición */
+}
+
+/* Alterna a amarillo */
+.options a:hover {
+    animation: hoverColor 2s infinite alternate;
+}
+
+@keyframes hoverColor {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: #feed01;
+    }
+}
+/* banner */
+.welcome{
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.text{
+    font-size: 16px;
+
+}
+/* container */
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+.banner{
+    width: 100%;
+}
+
+
+.stats{
+    width:30%;
+}
