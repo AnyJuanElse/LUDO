@@ -1,0 +1,19 @@
+body {
+    background-image: url('/img/rb_67254.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed; 
+}
+
+/* Superposición para darle transparencia */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.871);
+    z-index: -1;
+}

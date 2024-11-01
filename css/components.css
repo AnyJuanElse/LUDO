@@ -1,0 +1,223 @@
+ /*Log in form styles*/
+ .login{
+    text-align: center;
+    width: 400px;
+    height: 480px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #000000;
+ }
+ .login img{
+    height: 170px;
+    width: 300px;
+    padding: 25px;
+    max-width: 100%;
+    overflow: hidden;
+    gap: 10px;
+ }
+.login form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    width: 70%;  
+    margin: auto;
+}
+form input{
+    font-family: poppins;
+    color: #777777c6;
+    width: 400px;
+    padding: 10px;
+    margin: 8px;
+    border: none;
+    border-radius: 10px;
+}
+ form button{
+    margin-top: 10px ;
+    padding: 10px;
+    width: 120px;
+    border-radius: 8px;
+    border: none;
+    background-color: #df3821;
+    color: #FFF;
+    font-family: poppins;
+    font-size: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+ }
+ form button:hover{
+    background-color: #ffb400;
+    color: #000; 
+ }
+ /*Captcha domie*/
+ .captcha {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-width: 200px;
+    gap: 10px;
+}
+.captcha input[type="checkbox"] {
+    width: 20px; 
+    height: 20px; 
+    margin-left: 8px;
+}
+.captcha label {
+    padding: 5px;
+    margin: 10px;
+    font-size: 14px;
+    font-family: 'poppins';
+    flex: 1;
+}
+
+ /*Hearth counter*/
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    opacity: 0; /* Oculto al inicio */
+    transform: scale(0.8);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .bubble.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .heart {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+ /*Whatsapp button*/
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: #000000;
+	color:#FFF;
+    border: #ffffff40 1px solid;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.float:hover {
+    transition: 1s;
+    background-color: #128C7E;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/*Media Queries*/
+/* Media query para pantallas de 768px en adelante */
+@media (min-width: 768px) {
+    .brief {
+        flex-direction: row; /* Cambia a disposición en fila en pantallas grandes */
+    }
+
+    .brief div {
+        width: 45%; /* Dos columnas, cada una ocupando un 45% del ancho */
+    }
+
+    .aside_text {
+        height: auto; 
+        font-size: 0.9em; 
+        padding: 20px;
+    }
+
+    .aside_text h3 {
+        font-size: 1em;
+    }
+
+    .aside_text p {
+        font-size: 0.8em;
+    }
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .options {
+        margin-top: 10px;
+    }
+
+    .options a:hover {
+        color: #ffffff;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    aside {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    aside img {
+        width: 100%; /* Ajusta la imagen para pantallas pequeñas */
+        margin-bottom: 10px;
+    }
+
+    .aside_text {
+        padding: 20px; /* Un poco de espacio lateral */
+    }
+}
+
+@media (max-width: 480px) {
+    .container2 {
+        width: 90%;
+    }
+    .logo img {
+        width: 80px;
+    }
+
+    .info {
+        padding: 15px;
+    }
+
+    .banner {
+        font-size: 16px;
+    }
+
+    .stats img {
+        width: 120px;
+    }
+}

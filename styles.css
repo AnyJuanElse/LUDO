@@ -1,85 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
 
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /*-navigation bar-*/
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     background-color: black;
-    box-shadow: -1px 7px 5px -4px rgba(0,0,0,0.72);
--webkit-box-shadow: -1px 7px 5px -4px rgba(0,0,0,0.72);
--moz-box-shadow: -1px 7px 5px -4px rgba(0,0,0,0.72);
+    padding: 10px 20px;
+    align-items: center;
 }
-
-.logo img{
+.logo img {
     width: 120px;
-    margin-left: 40px;
+    margin-bottom: -10px;
 }
-
-.options{
-    margin: 20px;
-    width: 200px;
-    display:inline-flex;
-    justify-content: space-around; 
-    align-items: center;    
+.options {
+    display: flex;
+    gap: 15px;
 }
-
-.options a{ 
-    padding: 10px;
-    color: aliceblue;
+.options a {
+    color: rgb(172, 172, 172);
     font-size: 14px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
-    transition: color 0.4s ease-in-out; /* Suaviza la transición */
-}
-
-.options a:hover {
-    color: rgb(187, 186, 186); /* Primer cambio a rojo */
-    transition: color 0.4s ease-in-out; /* Suave transición */
-}
-
-/* Alterna a amarillo */
-.options a:hover {
-    animation: hoverColor 2s infinite alternate;
-}
-
-@keyframes hoverColor {
-    0% {
-        color: rgb(255, 255, 255);
-    }
-    100% {
-        color: #feed01;
-    }
-}
-/* banner */
-.welcome{
-    font-size: 50px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins';
     font-weight: 300;
-    font-style: normal;
+    margin: 0px 30px 10px 0px;
+    text-decoration: none;
+    transition: color 0.3s ease, color 0.3s ease;
+}
+.options a:hover {
+    color: #ffffff;
 }
 
-.text{
+/* Contenedores generales */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 15px auto 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins';
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.container2 {
+    width: 75%;
+    max-width: 800px;
+    margin: 15px auto 40px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 20px;
+    -webkit-box-shadow: 3px 10px 8px -5px rgba(0,0,0,0.39);
+-moz-box-shadow: 3px 10px 8px -5px rgba(0,0,0,0.39);
+box-shadow: 3px 10px 8px -5px rgba(0,0,0,0.39);
+}
+
+/* Estilo del contenido de la cabecera */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.info {
+    background: rgb(211,104,26);
+background: linear-gradient(90deg, rgba(246, 120, 29, 0.987) 13%, rgba(212,37,37,0.9558198012314834) 84%);
+    border-radius: 20px;
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    -webkit-box-shadow: 3px 10px 8px -5px rgba(0,0,0,0.39);
+-moz-box-shadow: 3px 10px 8px -5px rgba(0,0,0,0.39);
+box-shadow: 3px 10px 8px -5px rgba(0,0,0,0.39);
+}
+.info h2, .info a, .info p {
+    margin: 10px 0;
+    color:#fff;
+    font-weight: 300;
+}
+.info a {
     font-size: 16px;
+}
+.img_info {
+    background-color: rgb(215, 250, 245);
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_info img {
+    margin-top: -10px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 15px;
+    font-family: 'Poppins';
+    gap: 25px;
+    overflow: hidden;
+}
+.stats img {
+    margin: 10px;
+    padding: 5px;
+    width: 140px;
+}
+
+.stats_benefits{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+.stats_info{
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-shadow: 3px 10px 8px -5px rgba(0,0,0,0.39);
+-moz-box-shadow: 3px 10px 8px -5px rgba(0,0,0,0.39);
 
 }
-/* container */
-
-.container{
-    width: 80%;
-    margin: auto;
+.title_stats, .aside_text h3{
+    color: #fff;
+    padding: 10px;
+    margin: 0px 0px 15px 0px;
+    font-size: 22px;
 }
 
+.stats_info p{
+    color: #ffffff;
+    font-family:'Poppins';
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
 
+/* Banner */
 .banner{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: -15px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+h1{
+    font-family: 'Poppins';
+    width: 95%;
+    text-align: center;
+    margin: 10px 10px 30px 10px;
+}
+.banner h2{
+    margin-top: 25px;
+}
+
+/* Briefing */
+.brief {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column; 
+}
+
+.brief div {
+    padding: 10px;
+    margin: 10px;
     width: 100%;
 }
 
+.brief p, .brief h2 {
+    color: #fff;
+    font-family: 'Poppins';
+}
 
-.stats{
-    width:30%;
+/*Aside - MCER Nivel*/
+aside {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 95%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+aside img {
+    flex: 1 1 80%; /* La imagen ocupa un máximo del 35% del ancho */
+    max-width: 450px; /* Limita el tamaño máximo en cualquier resolución */
+    height: auto;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.aside_text {
+    flex: 1 1 50%; /* El texto ocupa más espacio que la imagen */
+    padding: 10px;
+    max-width: 100%;
+    height: 300px;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+.aside_text p{
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    height: 150px;
+}
+footer .icons img{
+    width: 30px;
+    padding: 5px;
+    margin: 2px;
+    filter:invert(1)
+}
+footer div img{
+    width: 150px;
+    overflow: hidden;
 }
