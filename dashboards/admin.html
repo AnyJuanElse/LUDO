@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUDO | Admin Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/dashboards.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <img src="../img/Logo - LUDO.png" alt="" srcset="">
+        </div>
+        <div class="options">
+            
+            <a href="#" id="logout">Log Out</a>
+        </div>
+    </nav>
+
+    <div class="welcome">
+        <p class="animate__animated animate__fadeInDown greeting ">👋 Welcome back Admin!</p>
+    </div>
+
+    <section class="animate__animated animate__fadeInLeft panel">
+        <div class="wrap">
+            <div class="user_data">
+                <div class="profile_settings">
+                    <img src="https://www.pngmart.com/files/21/Admin-Profile-PNG-Isolated-File.png" alt="" profile_img>
+                    <span style="color: aliceblue;">Administrator</span>
+                    <a href=""><img src="../img/gear.svg" class="settings" alt="config"></a>
+                </div>
+            </div>
+            <div class="panel_options">
+                <!--Home-->
+                <a href="" title="Home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-house" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                    </svg>
+                </a>
+                <!--Gestion de usuarios-->
+                <a href="" title="View Students">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-backpack" viewBox="0 0 16 16">
+                        <path
+                            d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z" />
+                        <path
+                            d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5" />
+                    </svg>
+                </a>
+                <!--Teachers-->
+                <a href="" title="Add Professors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-person-add" viewBox="0 0 16 16">
+                        <path
+                            d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                        <path
+                            d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
+                    </svg>
+                </a>
+                <!-- Delete Users -->
+                <a href="" title="Edit & Remove User">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill-gear" viewBox="0 0 16 16">
+                        <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4m9.886-3.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                      </svg>
+                </a>
+                <!--Courses -->
+                <a href="" title="Edit Course">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+                        <path d="M6 1v3H1V1zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm14 12v3h-5v-3zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1zM6 8v7H1V8zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm14-6v7h-5V1zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/>
+                    </svg>
+                </a>
+            </div>
+
+
+        </div>
+
+        <section class="dashboard">
+            <div class="dash_title">
+                <img src="https://static-00.iconduck.com/assets.00/dashboard-icon-2048x2048-smbjyr2w.png" alt="">
+                <h4 style="color: white;">Your Dashboard > <span id="current_page"></span></h4>
+            </div>
+
+            <div>
+                <div id="home" class="content">
+                    
+                    <h4>This is your Dashboard Feed</h4>
+                    <p>Manage and monitor everything from one place.</p>
+
+                    <div class="dashboard-summary">
+                        <div class="summary-item">
+                            <p>📈</p>
+                            <h5>Users</h5>
+                            <p id="user-count">0</p>
+                        </div>
+                        <div class="summary-item">
+                            <p>🎓</p>
+                            <h5>Courses</h5>
+                            <p>0</p>
+                        </div>
+                        <div class="summary-item">
+                            <p>🍎</p>
+                            <h5>Professors</h5>
+                            <p id="professor-count">0</p>
+                        </div>
+                    </div>
+
+                    <div class="home_footer">
+                        <div class="quick-actions">
+                            <h4>Your Shortcuts ></h4>
+                            <hr>
+                            <ul>
+                                <li><a href="#">Añadir Usuario +</a></li>
+                                <li><a href="#">Añadir Profesor +</a></li>
+                                <li><a href="#">Añadir Curso +</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="welcome-image">
+                            <img src="../img/home_img.svg" alt="Dashboard Image">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="view_users">
+                    <div class="description">
+                        <h4>Our members:</h4>
+                        <p>Here you will find all of our students registered on <b>LUDO</b>.</p>
+                    </div>
+                    
+
+
+                </div>
+
+                <div class="add_tutors">
+                    <div class="description">
+                        <h4>Add a New Teacher:</h4>
+                        <p>Here you can create a new Tutor credential.</p>
+
+
+                        <div class="new_tutor_panel">
+
+
+                            <form class="add_form" id="addTutorForm">
+                                <h4 style="color: aliceblue; padding: 5px; font-size: large;"> 🪪 New Teacher Information</h4>
+                                <input type="text" name="first_name" placeholder="Name" required>
+                                <input type="text" name="last_name" placeholder="Last Name" required>
+                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="password" name="password" placeholder="Password" required>
+                                <button type="submit">+ Add</button>
+                            </form>
+    
+    
+                            <div class="new_tutor_table" id="tutor_list">
+                                
+                                
+    
+                            </div>
+
+                        </div>
+                            
+                    </div>
+
+
+                </div>
+
+
+                <div class="remove_users">
+                    <div class="description">
+                        <h4>Remove & Edit users:</h4>
+                        <p>You can edit or delete a user account just right.</p>
+                    </div>
+                    <div id="remove_users_table"></div>
+                
+                    
+                    <div class="edit_user_form" id="edit_user_form">
+                        <h4 style="text-align: center; font-size: larger; margin-top: 10px;">✏️ Edit User</h4>
+                        <br>
+                        <form id="edit_form">
+                            <label for="edit_first_name"></label>
+                            <input type="text" id="edit_first_name" name="first_name" required><br><br>
+                
+                            <label for="edit_last_name"></label>
+                            <input type="text" id="edit_last_name" name="last_name" required><br><br>
+                
+                            <label for="edit_email"></label>
+                            <input type="email" id="edit_email" name="email" required><br><br>
+                
+                            <label for="edit_role"></label>
+                            <select id="edit_role" name="role" required>
+                                <option value="teacher">Teacher</option>
+                                <option value="student">Student</option>
+                            </select><br><br>
+
+                            <button type="submit" class="save" title="Save Changes">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+                                  </svg>
+
+                            </button>
+                            <button type="button" class="cancel" onclick="cancelEdit()" title="Discard">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                  </svg>
+                            </button>
+                        </form>
+                    </div>
+                
+                </div>
+
+                <div class="add_course">
+                    <div class="description">
+                        <h4>Add or Delete a course:</h4>
+                        <p>Here you can <b>view / add / remove</b> a course.</p>
+                    </div>
+                    <div class="courses_panel">
+                        <form id="add-course-form" enctype="multipart/form-data">
+                            <h4 style="color: aliceblue; padding: 5px; font-size: large; margin-bottom: 10px;">New Course Information 📚</h4>
+                            <input type="file" id="course-image">
+                            <input type="text" id="course-name" placeholder="Course Name" required>
+                            <textarea id="course-description" placeholder="Course Description"></textarea>
+                            <input type="text" id="course-level" placeholder="Course Level (e.g., A1, B2)" required>
+                            <button type="submit">+ Add Course</button>
+                        </form>
+                        
+                        
+
+                        <div class="course_container">
+                            <div class="course_title" style="width: 100%;">
+                                <h4 style="font-size: x-large; font-family: 'Poppins'; text-align: left; padding: 20px; margin: 5px; color: #fff;">Our Courses:</h4>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+    </section>
+
+    <footer>
+        <div class="icons">
+            <a href="#"><img src="../img/facebook.svg" alt="" srcset=""></a>
+            <a href="#"><img src="../img/instagram.svg" alt="" srcset=""></a>
+            <a href="#"><img src="../img/twitter-x.svg" alt="" srcset=""></a>
+        </div>
+        <p style="color: rgb(255, 255, 255); font-size: 12px; font-family: poppins;">LUDO, 2024</p>
+        <div>
+            <img src="../img/logos-UD-PLAN_Vertical.png" alt="" srcset="">
+        </div>
+    </footer>
+
+    <script src="../js/dashboards.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+
+</html>

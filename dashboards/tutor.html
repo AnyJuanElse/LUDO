@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUDO | Tutor Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/dashboards.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <img src="../img/Logo - LUDO.png" alt="" srcset="">
+        </div>
+        <div class="options">
+
+            <a href="#" id="logout">Log Out</a>
+        </div>
+    </nav>
+
+    <div class="welcome">
+        <p class="animate__animated animate__fadeInDown greeting ">👋 Welcome back Tutor!</p>
+    </div>
+
+    <section class="animate__animated animate__fadeInLeft panel" style="width: 90%; height: auto; margin: auto;">
+        <div class="wrap">
+            <div class="user_data">
+                <div class="profile_settings">
+                    <img src="https://www.pngmart.com/files/21/Admin-Profile-PNG-Isolated-File.png" alt="" profile_img>
+                    <span style="color: aliceblue;">Tutor</span>
+                    <a href=""><img src="../img/gear.svg" class="settings" alt="config"></a>
+                </div>
+            </div>
+            <div class="panel_options">
+                <!--Home-->
+                <a href="" title="Home" data-section="home" title="Home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-house" viewBox="0 0 16 16">
+                        <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                    </svg>
+                </a>
+            
+                <!--Gestion de usuarios-->
+                <a href="" title="My Students" data-section="my_ustudents" title="My Students">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-backpack" viewBox="0 0 16 16">
+                        <path
+                            d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z" />
+                        <path
+                            d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0m1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5" />
+                    </svg>
+                </a>
+
+                    <!--Gestion de cursos-->
+                    <a href="" title="My Courses" data-section="my_courses">
+                        <img src="../img/online-course.svg" alt="" style="width: 25px; height: 25px; filter: invert(1);">
+                    </a>
+    
+
+                <!--Balance-->
+                <a href="" title="Progress" data-section="progress">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z" />
+                    </svg>
+                </a>
+
+                <!--Messages -->
+                <a href="" title="Messages">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg>
+                </a>
+            </div>
+        </div>
+
+
+        <section class="dashboard">
+            <div class="dash_title">
+                <img src="https://static-00.iconduck.com/assets.00/dashboard-icon-2048x2048-smbjyr2w.png" alt="">
+                <h3 style="color: white;">Your Dashboard > <span id="current_page"></span></h3>
+            </div>
+
+
+            <div id="home" class="content">
+
+                <h4>This is your Dashboard Feed</h4>
+                <p>Manage and monitor everything from one place.</p>
+
+
+                <div class="dashboard-summary">
+                    <div class="summary-item">
+                        <p>🧑🏻‍🎓 </p>
+                        <h5>Students</h5>
+                        <p id="user-count">0</p>
+                    </div>
+                    <div class="summary-item">
+                        <p>🎓</p>
+                        <h5>Courses</h5>
+                        <p>0</p>
+                    </div>
+                </div>
+
+                <div class="home_footer">
+                    <div class="quick-actions">
+                        <h4>Your Shortcuts ></h4>
+                        <hr>
+                        <ul>
+                            <li><a href="#">Add a Student +</a></li>
+                            <li><a href="#">Add a Profesor +</a></li>
+                            <li><a href="#">Create a Course +</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="welcome-image">
+                        <img src="../img/home_img.svg" alt="Dashboard Image">
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="my_students" class="my_students">
+                <div class="description">
+                    <h4>Your Students:</h4>
+                    <p>Here you will find all of your students registered in your courses.</p>
+                </div>
+
+
+
+
+            </div>
+
+            <div id="my_courses" class="my_courses">
+                <div class="description">
+                    <h4>My Courses:</h4>
+                    <p>Here you will <b>find, create or remove</b> all of your courses.</p>
+                </div>
+                <div class="courses_panel">
+                    <form id="add-course-form" enctype="multipart/form-data">
+                        <h4 style="color: aliceblue; padding: 5px; font-size: large; margin-bottom: 10px;">New Course
+                            Information 📚</h4>
+                        <input type="file" id="course-image">
+                        <input type="text" id="course-name" placeholder="Course Name" required>
+                        <textarea id="course-description" placeholder="Course Description"></textarea>
+                        <input type="text" id="course-level" placeholder="Course Level (e.g., A1, B2)" required>
+                        <button type="submit">+ Add Course</button>
+                    </form>
+
+
+
+                    <div class="course_container">
+                        <div class="course_title" style="width: 100%;">
+                            <h4
+                                style="font-size: x-large; font-family: 'Poppins'; text-align: left; padding: 20px; margin: 5px; color: #fff;">
+                                Your Courses:</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="progress" class="progress">
+                <div class="description">
+                    <h4>Progress:</h4>
+                    <p>Here you will find some useful tools while courses goes on.</p>
+                </div>
+
+
+
+            </div>
+
+            </div>
+            
+            <div class="messages">
+                <div class="description">
+                    <h4>Your Messages:</h4>
+                    <p>Here you can send messages.</p>
+                </div>
+                <div class="inbox-container">
+                    <div class="email-item">
+                        <input type="checkbox" style="margin: 3px;">
+                        <div class="email-sender">@Anyjuan</div>
+                        <div class="email-subject">Subject:</div>
+                        <div class="email-snippet">Este es un breve resumen...</div>
+                        <div class="email-time">10:45 AM</div>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox" style="margin: 3px;">
+                        <div class="email-sender">@User</div>
+                        <div class="email-subject">Subject:</div>
+                        <div class="email-snippet">Este es un pequeño fragmento...</div>
+                        <div class="email-time">13:02 PM</div>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox" style="margin: 3px;">
+                        <div class="email-sender">@Visagt7</div>
+                        <div class="email-subject">FW:</div>
+                        <div class="email-snippet">Un mensaje de para la bandeja...</div>
+                        <div class="email-time">Monday</div>
+                    </div>
+                    <div class="email-item">
+                        <input type="checkbox" style="margin: 3px;">
+                        <div class="email-sender">@Osk</div>
+                        <div class="email-subject">Subject:</div>
+                        <div class="email-snippet">Un mensaje adicional de prueba para la bandeja...</div>
+                        <div class="email-time">Sunday</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <footer>
+        <div class="icons">
+            <a href="#"><img src="../img/facebook.svg" alt="" srcset=""></a>
+            <a href="#"><img src="../img/instagram.svg" alt="" srcset=""></a>
+            <a href="#"><img src="../img/twitter-x.svg" alt="" srcset=""></a>
+        </div>
+        <p style="color: rgb(255, 255, 255); font-size: 12px; font-family: poppins;">LUDO, 2024</p>
+        <div>
+            <img src="../img/logos-UD-PLAN_Vertical.png" alt="" srcset="">
+        </div>
+    </footer>
+
+
+    <script src="../js/dashboards.js"></script>
+</body>
+
+</html>

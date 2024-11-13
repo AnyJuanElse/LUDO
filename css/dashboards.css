@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body {
+  background-image: url("../img/26756.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-color: rgba(255, 255, 255, 0.756);
+  pointer-events: none;
+  z-index: 1;
+}
+
+body * {
+  position: relative;
+  z-index: 2;
+}
+
+/*Welcome Back*/
+.welcome {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.greeting {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Poppins';
+  background-color: #000000da;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/*Control pannel*/
+.panel {
+  display: flex;
+  align-items: flex-start;
+  width: 90%;
+  height: auto;
+  padding: 8px;
+  margin: auto;
+  font-family: 'Poppins';
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_data {
+  width: 250px;
+  height: auto;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.profile_settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile_settings img {
+  background-color: aliceblue;
+  padding: 10px;
+  margin: 20px;
+  width: 100px;
+  border-radius: 120px;
+}
+
+.profile_settings .settings {
+  background-color: transparent;
+}
+
+img.settings {
+  width: 25px;
+  margin: 10px;
+  padding: 0;
+  filter: invert(1);
+}
+
+.panel_options {
+  position: relative;
+  width: 250px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.panel_options a {
+  display: block;
+  margin: 8px;
+  padding: 10px;
+  color: aliceblue;
+  background: #121212e1;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.panel_options a:hover {
+  color: #fff;
+  background: linear-gradient(90deg, rgba(246, 120, 29, 0.987) 13%, rgba(212, 37, 37, 0.9558198012314834) 84%);
+}
+
+.panel_options a.active {
+  color: #fff;
+  background: linear-gradient(90deg, rgba(246, 120, 29, 0.987) 13%, rgba(212, 37, 37, 0.9558198012314834) 84%);
+}
+
+
+
+/*Dashboard panel*/
+.dashboard {
+  margin-top: 0;
+  margin-left: 20px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(240, 240, 240, 0.756);
+  border-radius: 20px;
+  overflow: scroll;
+}
+
+.dash_title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #121212;
+  border-radius: 20px 20px 0 0;
+}
+
+.dash_title img {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  margin: 10px 10px 10px 10px;
+  filter: invert(1);
+}
+
+/* Estilos para la sección Home */
+.content {
+  padding: 10px;
+  color: #000000;
+}
+
+.dashboard-summary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.summary-item {
+  background: #282828;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+}
+
+.summary-item h5 {
+  font-size: 18px;
+}
+
+.summary-item p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.home_footer {
+  display: flex;
+  justify-content: space-between;
+  /* Asegura que los elementos estén alineados en los extremos */
+  align-items: flex-start;
+  /* Alinea los elementos al principio */
+  margin-top: 10px;
+  margin: 30px;
+}
+
+.quick-actions {
+  width: 100%;
+  /* Ocupa el 100% en pantallas pequeñas */
+  margin-top: 30px;
+  background-color: #121212f9;
+  border-radius: 20px;
+}
+
+.quick-actions h4 {
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+}
+
+.quick-actions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-actions ul li {
+  margin: 10px 0;
+
+}
+
+.quick-actions ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.welcome-image {
+  width: 100%;
+  /* Ocupa el 100% en pantallas pequeñas */
+  margin-top: 40px;
+  text-align: right;
+}
+
+.welcome-image img {
+  margin-top: -10px;
+  max-width: 100%;
+  width: 180px;
+}
+
+/*Features description*/
+.description {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  padding: 10px;
+  text-align: left;
+}
+
+
+/*Tabla de usuarios*/
+.view_users {
+  width: 100%;
+  max-width: 100%;
+  overflow: scroll;
+  padding: 20px;
+}
+
+.user-table,
+.style_users_table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.user-table th,
+.user-table td,
+.style_users_table th,
+.style_users_table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.user-table th,
+.style_users_table th,
+.new_tutor_table th,
+.tutor-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even),
+.style_users_table tr:nth-child(even),
+.tutor-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-table tr:hover,
+.style_users_table tr:hover,
+.tutor-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/*Agregar nuevo tutor form y Editar usuario form*/
+.add_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins';
+  width: 100%;
+  margin-top: 20px;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 8px;
+}
+
+.add_form input,
+.add_form button {
+  font-family: 'Poppins';
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.add_form input::placeholder {
+  color: #bbb;
+}
+
+.add_form button {
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.add_form button:hover {
+  background-color: #388E3C;
+}
+
+
+.new_tutor_panel {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  overflow: scroll;
+}
+
+/*Mostrar tutores*/
+.new_tutor_table {
+  width: 50%;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+.new_tutor_table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.new_tutor_table th,
+.new_tutor_table td,
+.tutor_table th,
+.tutor_table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.new_tutor_table th {
+  background-color: #f2f2f2;
+}
+
+.new_tutor_table td {
+  background-color: #fafafa;
+}
+
+/*Estilos tabla para eliminar y editar usuarios*/
+.remove_users {
+  overflow: scroll;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 0 auto;
+  padding: border-box;
+}
+
+#remove_users_table {
+  padding: 10px;
+}
+
+.style_users_table th,
+.style_users_table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  word-wrap: break-word;
+}
+
+.style_users_table td.ID,
+.style_users_table td.role {
+  font-weight: bold;
+}
+
+/*Estilo para el boton de "Remove*/
+
+button {
+  font-family: 'Poppins';
+  background-color: #f44336;
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e53935;
+}
+
+/* Estilo para el botón "Editar" (azul oscuro) */
+button.edit-button {
+  padding: 5px 10px;
+  background-color: #383838;
+  /* Azul oscuro */
+  color: #fff;
+}
+
+button.edit-button:hover {
+  color: #fff;
+  background-color: rgb(84, 84, 84);
+  /* Azul más oscuro en hover */
+}
+
+
+/*Estilos para formulario de edicion de usuarios*/
+#edit_user_form {
+  display: none;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#edit_form {
+  text-align: center;
+}
+
+#edit_form label {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+#edit_form input,
+#edit_form select {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+
+#edit_form input:focus,
+#edit_form select:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.bi-pencil,
+.bi-trash {
+  margin-top: 5px;
+}
+
+/* Botón de guardar cambios (Aceptar) */
+button.save {
+  background-color: #4CAF50;
+  /* Verde para aceptar */
+}
+
+button.save:hover {
+  background-color: #45a049;
+  /* Verde más oscuro en hover */
+}
+
+/* Botón de cancelar cambios (Descartar) */
+button.cancel {
+  background-color: #f44336;
+  /* Rojo para cancelar */
+}
+
+button.cancel:hover {
+  background-color: #e53935;
+  /* Rojo más oscuro en hover */
+}
+
+.desktop-suggestion {
+  display: none !important;
+  /* Muestra la imagen cuando el contenido se oculta */
+}
+
+/* Estilos generales para el panel de cursos */
+.courses_panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Espacio entre el formulario y la lista de cursos */
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.add_course {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+  /* Separación entre el formulario y la lista de cursos */
+  background-color: #000000;
+  border-radius: 8px;
+}
+
+/* Estilo para los items de los cursos */
+.course-item {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  background-color: rgba(221, 221, 221, 0.534);
+  height: 150px;
+  width: 200px;
+  max-width: 100%;
+  max-width: 140px;
+  border-radius: 10px;
+  border: 3px dashed rgba(246, 246, 246, 0.535);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease; 
+}
+
+.course-item:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo más blanco */
+  border-color: rgba(246, 246, 246, 0.8); /* Borde ligeramente más claro */
+}
+
+.courses_panel form {
+  margin: auto;
+  background-color: #000;
+  width: auto;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.courses_panel form input[type="text"],
+.courses_panel form input[type="file"],
+.courses_panel form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+.courses_panel form input::placeholder,
+.courses_panel form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.courses_panel form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.courses_panel form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.courses_panel form button:hover {
+  background-color: #666;
+}
+
+
+/*Email simulator*/
+.inbox-container {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 95%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.email-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.email-item:hover {
+  background-color: #f1f3f4;
+}
+
+.email-sender {
+  padding: 5px;
+  flex: 1;
+  font-weight: bold;
+  color: #e85b1a;
+}
+
+.email-subject {
+  flex: 1;
+  color: #333;
+  font-weight: bold;
+}
+
+.email-snippet {
+  flex: 3;
+  color: #888;
+  font-size: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.email-time {
+  flex: 1;
+  font-size: 0.8em;
+  color: #888;
+  text-align: right;
+}
+
+
+/*Media Query para pantallas entre 768px hasta 1230px*/
+@media (min-width: 768px) and (max-width: 1230px) {
+  .new_tutor_panel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .new_tutor_panel form {
+    width: 90%;
+    max-width: none;
+  }
+
+  .new_tutor_table {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .course-item {
+    width: 100%;
+    /* En pantallas medianas, los items de curso ocupan el 100% del contenedor */
+    max-width: none;
+    margin: 5px 20px;
+    padding: 10px;
+  }
+}
+
+.course-title,
+.course-description {
+  color: #fff;
+}
+
+/* Para pantallas grandes (mayores a 1024px) */
+@media (min-width: 1024px) {
+  .courses_panel {
+    flex-direction: row;
+    /* Los elementos se disponen en fila */
+  }
+
+  .course_container {
+    padding: 20px;
+    flex: 1;
+    margin: 20px;
+  }
+}
+
+/* Para pantallas medianas (menos de 1024px) */
+@media (max-width: 1024px) {
+  .courses_panel {
+    flex-direction: column;
+    /* En pantallas medianas, se colocan uno debajo del otro */
+    align-items: center;
+    /* Centra el contenido */
+  }
+
+  .course_container {
+    margin-top: 20px;
+    /* Añadimos separación entre el formulario y los cursos */
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .course-item {
+    width: 100%;
+    /* En pantallas medianas, los items de curso ocupan el 100% del contenedor */
+    max-width: none;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+}
+
+
+/* Media Query para pantallas menores a 768px */
+@media (max-width: 768px) {
+  .panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .user_data,
+  .panel_options,
+  .dashboard {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .panel_options a {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .dashboard {
+    height: auto;
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+
+  .summary-item h5 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .summary-item p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .quick-actions {
+    display: none;
+  }
+
+  .welcome-image {
+    width: 100%;
+    /* Ocupa el 100% en pantallas pequeñas */
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .new_tutor_panel {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .new_tutor_table {
+    width: 90%;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .courses_panel {
+    flex-direction: column;
+    /* En pantallas pequeñas, se apilan los elementos */
+    align-items: center;
+    /* Centra los elementos */
+  }
+
+  .course-item {
+    width: 100%;
+    /* Los items de curso ocupan el 100% del contenedor */
+    padding: 10px;
+    margin: 20px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .add_form {
+    padding: 15px;
+  }
+
+  .add_form input,
+  .add_form button {
+    font-size: 14px;
+  }
+}

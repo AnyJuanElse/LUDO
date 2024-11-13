@@ -27,13 +27,14 @@
     <div class="login">
         <img src="./img/logos-UD-PLAN_Vertical.png" alt="" srcset="">
 
-        <form action="" id="login">
-            <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
-            <input type="text" name="lastName" id="lastName" placeholder="Escribe tu apellido">
-            <input type="email" placeholder="Escribe tu correo">
-            <input type="password" placeholder="Crea una contraseña">
-            <button>Registrarse</button>
+        <form id="signup">
+            <input type="text" name="name" id="first_name" placeholder="Escribe tu nombre" required>
+            <input type="text" name="last_name" id="last_name" placeholder="Escribe tu apellido" required>
+            <input type="email" name="email" id="email" placeholder="Escribe tu correo" required>
+            <input type="password" name="password" id="password" placeholder="Crea una contraseña" required>
+            <button type="submit">Registrarse</button>
         </form>
     </div>
+    <script src="./js/signup.js"></script>
 </body>
 </html>

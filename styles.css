@@ -246,8 +246,9 @@ footer{
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    margin-top: 30px;
     background-color: #000;
-    height: 150px;
+    height: 130px;
 }
 footer .icons img{
     width: 30px;

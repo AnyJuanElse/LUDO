@@ -21,15 +21,15 @@
     </nav> 
 
     <div class="container">
-        <h3 style="margin-top: 30px; font-size: x-large; color: #171717e1;">¡ Bienvenid@ de nuevo !</h3>
+        <h3 style="margin-top: 30px; font-size: x-large; color: #171717e1;">¡ Bienvenid@ !</h3>
     </div>
 
     <div class="login">
         <img src="./img/logos-UD-PLAN_Vertical.png" alt="" srcset="">
 
-        <form action="" id="login">
-            <input type="text" name="email" id="email" placeholder="Escribe tu correo">
-            <input type="password" placeholder="Escribe tu contraseña">
+        <form id="login">
+            <input type="text" name="email" id="email" placeholder="Escribe tu correo" required>
+            <input type="password" name="password" id="password" placeholder="Escribe tu contraseña" required>
             
             <div class="captcha">
                 <input type="checkbox" id="captchaCheck">
@@ -39,5 +39,6 @@
             <a href="" style="font-family: 'poppins'; font-size: small; color: #ffffffc4; margin: 10px;">¿Olvidaste la contraseña?</a>
         </form>
     </div>
+<script src="./js/login.js"></script>
 </body>
 </html>
